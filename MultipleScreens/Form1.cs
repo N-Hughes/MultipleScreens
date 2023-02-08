@@ -12,8 +12,12 @@ namespace MultipleScreens
 {
     public partial class Form1 : Form
     {
+        public static int numberPlays = 0;
+
         public Form1()
         {
+            int temp = 0;
+
             InitializeComponent();
             MenuScreen ms = new MenuScreen();
 

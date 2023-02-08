@@ -19,6 +19,8 @@ namespace MultipleScreens
 
         private void openButton_Click(object sender, EventArgs e)
         {
+            Form1.numberPlays++;
+
             Form f = this.FindForm();
             f.Controls.Remove(this);
 

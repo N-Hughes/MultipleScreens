@@ -30,6 +30,7 @@
         {
             this.returnButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.playsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // returnButton
@@ -56,16 +57,29 @@
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             this.exitButton.Enter += new System.EventHandler(this.exitButton_Enter);
             // 
+            // playsLabel
+            // 
+            this.playsLabel.AutoSize = true;
+            this.playsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playsLabel.ForeColor = System.Drawing.Color.White;
+            this.playsLabel.Location = new System.Drawing.Point(182, 62);
+            this.playsLabel.Name = "playsLabel";
+            this.playsLabel.Size = new System.Drawing.Size(70, 25);
+            this.playsLabel.TabIndex = 2;
+            this.playsLabel.Text = "label1";
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orchid;
+            this.Controls.Add(this.playsLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.returnButton);
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(255, 201);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -73,5 +87,6 @@
 
         private System.Windows.Forms.Button returnButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Label playsLabel;
     }
 }

@@ -15,10 +15,12 @@ namespace MultipleScreens
         public GameScreen()
         {
             InitializeComponent();
+            playsLabel.Text = $"{Form1.numberPlays}";
         }
 
         private void returnButton_Click(object sender, EventArgs e)
         {
+            
             Form f = this.FindForm();
             f.Controls.Remove(this);
 
